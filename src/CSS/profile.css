@@ -1,0 +1,140 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e6e6e6;
+    padding: 20px;
+  }
+  
+  .card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .name {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .title {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 20px;
+  }
+  
+  .bio {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .skills {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  strong {
+    color: #333;
+  }
+  
+  /* Media Queries for Responsive Design */
+  
+  /* Large Devices (desktops, laptops) */
+  @media screen and (min-width: 1024px) {
+    .card {
+      max-width: 500px;
+    }
+  
+    .profile-image {
+      width: 200px;
+      height: 200px;
+    }
+  }
+  
+  /* Medium Devices (tablets, small laptops) */
+  @media screen and (max-width: 1023px) {
+    .portfolio {
+      height: auto;
+      padding: 40px;
+    }
+  
+    .card {
+      max-width: 90%;
+    }
+  
+    .profile-image {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .name {
+      font-size: 22px;
+    }
+  
+    .title {
+      font-size: 16px;
+    }
+  
+    .bio {
+      font-size: 14px;
+    }
+  
+    .skills {
+      font-size: 13px;
+    }
+  }
+  
+  /* Small Devices (mobiles) */
+  @media screen and (max-width: 600px) {
+    .portfolio {
+      padding: 30px 20px;
+      height: auto;
+    }
+  
+    .card {
+      padding: 15px;
+    }
+  
+    .profile-image {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .name {
+      font-size: 20px;
+    }
+  
+    .title {
+      font-size: 14px;
+    }
+  
+    .bio {
+      font-size: 13px;
+    }
+  
+    .skills {
+      font-size: 12px;
+    }
+  }

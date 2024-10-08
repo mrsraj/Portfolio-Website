@@ -1,0 +1,29 @@
+.about {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.about h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  background-color: rgb(126, 123, 123);
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+}
+
+.about p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.profile-picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 20px auto;
+}
