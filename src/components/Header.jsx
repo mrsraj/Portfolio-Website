@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import '../CSS/Header.css'
 
 import { fetchData } from '../ApiFetch/FetchApi';
-
+import Loading from '../Loading.jsx/Loading';
 function Header() {
   const [InfoData, setInfoData] = useState(null);
   const [error, setError] = useState(null);
@@ -26,7 +26,7 @@ function Header() {
 
   }, []);
 
-  if (error) return <div>Error: {error}</div>;
+
 
   return (
     <header className="header">
@@ -42,9 +42,10 @@ function Header() {
               <p className="header-subtitle"><b>Degree: </b>{info.degree}</p>
             </div>
           ))
-        ) : (
-          <div>Loading...</div>
-        )}
+        ) : error ? <div style={{color: 'var(--text-color)'}}>{error}</div> :
+          (
+            <Loading/>
+          )}
       </div>
 
       <div className='header-pic-div'>

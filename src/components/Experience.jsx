@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import '../CSS/Experience.css'
+import '../CSS/Experience.css';
 
 import { fetchData } from '../ApiFetch/FetchApi';
+import Loading from '../Loading.jsx/Loading';
 
 function Experience() {
 
@@ -28,24 +29,25 @@ function Experience() {
 
   }, []);
 
-  if (error) return <div>Error: {error}</div>;
-
   return (
-    <section id="about" className="about">
-      <h2 className='Experience-heading'>About Experience</h2>
+    <section className="about">
+      <div className='experience-heading'>About Experience</div>
       {Experience ? (
-        Experience.map((ele, index) => (
-          <div key={index}>
-            <h3>{ele.companyname}</h3>
-            <p>{ele.position}</p>
-            <p>{ele.projectdescription}</p>
-            <p>{ele.usedskills}</p>
-            <p>{ele.companyaddr}</p>
-          </div>
-        ))
-      ) : (
-        <h2>Loading...</h2>
-      )}
+        <div className="experience-container">
+          {Experience.map((ele, index) => (
+            <div className="experience-card" key={index}>
+              <h3 className="company-name">{ele.companyname}</h3>
+              <p className="position">{ele.position}</p>
+              <p className="description">{ele.projectdescription}</p>
+              <p className="skills">{ele.usedskills}</p>
+              <p className="address">{ele.companyaddr}</p>
+            </div>
+          ))}
+        </div>
+      ) : error ? <div style={{ color: 'var(--text-color)' }}>{error}</div> :
+        (
+          <Loading/>
+        )}
     </section>
   );
 }
