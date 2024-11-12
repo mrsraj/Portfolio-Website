@@ -30,7 +30,7 @@ function Experience() {
   }, []);
 
   return (
-    <section className="about">
+    <section className="expabout">
       <div className='experience-heading'>About Experience</div>
       {Experience ? (
         <div className="experience-container">

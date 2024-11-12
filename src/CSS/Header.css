@@ -30,9 +30,8 @@
 
 .profile-pic{
   width: 90%;
-  height: auto;
-  border-radius: 20px;
-  /* mix-blend-mode:color-burn; */
+  height: 90%;
+  border-radius: 50%;
 }
 
 .header-title {

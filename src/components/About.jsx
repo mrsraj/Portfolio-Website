@@ -3,10 +3,9 @@ import '../CSS/About.css'
 
 function About() {
   return (
-    <section id="about" className="about">
-      <h2>About Me</h2>
+    <section className="about" id='about'>
+      <h2 className='about-heading'><span className="heading-border"></span>About US<span className="heading-border"></span></h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
-      <img src="profile-picture.jpg" alt="Profile Picture" className="profile-picture" />
     </section>
   );
 }

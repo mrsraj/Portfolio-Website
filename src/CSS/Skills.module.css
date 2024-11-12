@@ -1,0 +1,41 @@
+.about_skills {
+  padding: 30px;
+}
+
+.skills_container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  overflow: auto;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.skills_heading {
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 10px;
+  background: linear-gradient(45deg, #ff6b6b, #f5a623);
+  border-radius: 30px;
+}
+
+.skill_card {
+  border: 2px solid rgb(225, 223, 223);
+}
+
+.skill_img_div {
+  height: 180px;
+  width: 180px;
+  margin: 10px;
+}
+
+.skill_img {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.skill_names {
+  text-align: center;
+}
