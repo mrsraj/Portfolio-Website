@@ -13,7 +13,6 @@ function Projects() {
         const endpoint = 'project';
         const result = await fetchData(endpoint);
 
-        // Simulating a delay for loading effect
         setTimeout(() => {
           setProjects(result);
         }, 1000);
@@ -35,9 +34,13 @@ function Projects() {
               <h3 className='project-name'>{project.title}</h3>
               <p className='project-desc'>{project.descriptions}</p>
               <p className='project-usedskills'>{project.usedSkills}</p>
-              <div className=''>
-                <a href={project.weblink ? project.weblink : ""}>Web Link</a>
-                <a href={project.gitlink ? project.gitlink : ""}>git Code</a>
+              <div className='link-button'>
+                <div className={`web-link${project.weblink ? "" : "hide"}`}>
+                  <a className='web-link' href={project.weblink ? project.weblink : ""}>Web Link</a>
+                </div>
+                <div className={`git-code${project.gitlink ? "" : "hide"}`}>
+                  <a className='git-code' href={project.gitlink ? project.gitlink : ""}>Git Code</a>
+                </div>
               </div>
             </div>
           ))}

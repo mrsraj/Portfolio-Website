@@ -69,3 +69,26 @@
   text-align: center;
   color: #555;
 }
+
+.link-button {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.web-link {
+  text-decoration: none;
+}
+
+.web-linkhide {
+  visibility: hidden;
+}
+
+.git-code {
+  text-decoration: none;
+}
+
+.git-codehide {
+  visibility: hidden;
+}
