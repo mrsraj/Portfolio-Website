@@ -4,7 +4,8 @@ import '../CSS/Footer.css'
 function Footer() {
   return (
     <footer className="footer">
-      <p>&copy; 2023 Engineering Student</p>
+      <p>&copy; 2020-2024 Engineering Student</p>
+      <p>sachinraj6392@gmail.com</p>
     </footer>
   );
 }
